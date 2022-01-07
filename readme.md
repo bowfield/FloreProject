@@ -18,7 +18,6 @@ Simple 2D platform game.
     - [ ] Blocks
     - [ ] Player
     - [ ] Entity
-    - [ ] UI
-        - [x] UIButton
+    - [x] UI
 - [ ] MutliPlayer
 - [ ] Android full support
