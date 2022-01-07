@@ -1,11 +1,10 @@
-## SMBClone
+## FloreProject
 Simple crossplatform game engine for like SMB game!
 
 ## Supported platforms
-| OS | Description |
+| OS | Support |
 |----|----|
 | Android | ✅ |
 | Windows | ✅ |
 | Linux | ✅ |
 | MacOS | ✅ |
-| iOS | ❌ | 
