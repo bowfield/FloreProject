@@ -17,8 +17,8 @@ class Game(var renderer: Renderer, var assetsManager: AssetsManager): RenderBroa
         D.initD(os)
         renderer.initRender2(this)
 
-        appendUiElement(UIButton(Pos(10, 10), Size(160, 40), "Start"))
-        appendUiElement(UIButton(Pos(10, 60), Size(160, 40), "Quit"))
+        appendUiElement(UIButton(Pos(20, 20), Size(160, 40), "Start"))
+        appendUiElement(UIButton(Pos(20, 70), Size(160, 40), "Quit"))
     }
 
     fun appendUiElement(el: UIElement) {
@@ -31,15 +31,5 @@ class Game(var renderer: Renderer, var assetsManager: AssetsManager): RenderBroa
 
     override fun onRender() {
         renderUi()
-
-
-
-        //val screen = renderer.getScreenSize()
-
-//        renderer.drawRect(Pos(60, 60), Size(screen.w - 120,  screen.h - 120), Color.RED, 8)
-//        renderer.drawLine(Pos(0, 0), Pos(screen.w, screen.h), Color.GREEN, 8)
-//        renderer.drawImage(Pos(100, 100), Size(D.getBlockSize(), D.getBlockSize()), assetsManager.getImage("stone"))
-//        renderer.fillRect(Pos(500, 500), Size(50, 50), Color.BLUE)
-//        renderer.drawText(Pos(screen.w / 2, screen.h / 2), "Drawing Test", 16, Color.BLACK)
     }
 }
