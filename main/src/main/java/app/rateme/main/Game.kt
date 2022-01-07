@@ -8,6 +8,7 @@ import app.rateme.main.type.Pos
 import app.rateme.main.type.Size
 import app.rateme.main.ui.UIButton
 import app.rateme.main.ui.UIElement
+import app.rateme.main.ui.UIText
 import java.lang.Exception
 
 class Game(var renderer: Renderer, var assetsManager: AssetsManager): RenderBroadcast {
@@ -17,6 +18,8 @@ class Game(var renderer: Renderer, var assetsManager: AssetsManager): RenderBroa
         D.initD(os)
         renderer.initRender2(this)
 
+        val scrn = renderer.getScreenSize()
+        appendUiElement(UIText(Pos(scrn.w - 150, scrn.h - 30), "FloreProject"))
         appendUiElement(UIButton(Pos(20, 20), Size(160, 40), "Start"))
         appendUiElement(UIButton(Pos(20, 70), Size(160, 40), "Quit"))
     }
