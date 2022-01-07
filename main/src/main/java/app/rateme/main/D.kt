@@ -17,11 +17,15 @@ object D {
         println("[Logger] $line")
     }
 
-    fun getRenderScale(): Int {
+    fun getScale(): Int {
         return when(getCurrentOS()) {
             OS.ANDROID -> 4
 
             else -> 1 // default
         }
+    }
+
+    fun getBlockSize(): Int {
+        return 32 * getScale()
     }
 }

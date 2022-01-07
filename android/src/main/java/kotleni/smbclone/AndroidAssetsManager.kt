@@ -7,6 +7,7 @@ import android.graphics.BitmapFactory
 import android.graphics.Bitmap
 
 import android.content.res.AssetManager
+import app.rateme.main.D
 import app.rateme.main.Game
 import kotleni.smbclone.type.AndroidImage
 import java.io.IOException
@@ -29,7 +30,7 @@ class AndroidAssetsManager(var context: Context): AssetsManager() {
         val assets = context.assets.list("")
         assets?.forEach {
             if(it.endsWith(".png")) {
-                Game.logln("Loading asset $it")
+                D.logln("Loading asset $it")
                 val bitmap = getBitmapFromAsset(it)
 
                 images?.put(it, AndroidImage(bitmap))

@@ -1,10 +1,10 @@
 ## FloreProject
-Simple crossplatform game engine for like SMB game!
+Simple 2D platform game.
 
 ## Supported platforms
 | OS | Support |
 |----|----|
-| Android | ✅ |
+| Android | ❌ |
 | Windows | ✅ |
 | Linux | ✅ |
 | MacOS | ✅ |

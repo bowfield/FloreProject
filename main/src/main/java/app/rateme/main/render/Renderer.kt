@@ -31,5 +31,6 @@ open class Renderer() {
     open fun drawLine(posA: Pos, posB: Pos, color: Color, strokeWidth: Int) { }
     open fun drawImage(pos: Pos, size: Size, image: Image) { }
     open fun drawText(pos: Pos, text: String, fontSize: Int, color: Color) { }
+    open fun drawTextInRect(pos: Pos, size: Size, text: String, fontSize: Int, color: Color) { }
     open fun fillRect(pos: Pos, size: Size, color: Color) { }
 }
